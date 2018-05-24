@@ -33,7 +33,7 @@ app.get('/', function (req, res) {
 	request( reqData, function (error, response, body) {
 		if (error || !response || response.statusCode != 200)
 		{
-			res.send("Third-party server error", response.statusCode);
+			res.send("Third-party server error");
 			return;
 		}
 
